@@ -1,6 +1,6 @@
 # ninja-toolkit
 
-## Tools for NinjaMountain DevOps teams
+## A Vagrant Box with tools for NinjaMountain DevOps teams
 
 ### Included:
 

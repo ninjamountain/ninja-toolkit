@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -e #stop on error
-set -x #echo commands
+set -e
+set -x
 
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
@@ -28,6 +28,6 @@ apt-get install -y ansible
 apt-get install -y docker-ce
 apt-get install -y helm
 
-#Manual Steps (When logged into user account)
+# Manual Steps (When logged into user account)
 # terraform -install-autocomplete
 # sudo usermod -aG docker $USER
